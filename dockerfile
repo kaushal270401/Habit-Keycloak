@@ -1,7 +1,7 @@
 FROM quay.io/keycloak/keycloak:26.1.4
 
 # Copy your custom theme into the image
-COPY keycloak-theme-for-kc-all-other-versions.jar /opt/keycloak/providers/
+COPY keycloak-theme-for-kc-22-to-25.jar /opt/keycloak/providers/
 
 # Build the optimized Keycloak image
 ENV KC_DB=postgres
