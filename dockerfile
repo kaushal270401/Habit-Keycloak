@@ -9,5 +9,5 @@ ENV KC_FEATURES=organization
 RUN /opt/keycloak/bin/kc.sh build
 
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
-# Use 'start' instead of 'start-dev' for production
-CMD ["start"]
+# Use 'start --optimized' to skip the auto-rebuild phase
+CMD ["start", "--optimized"]
